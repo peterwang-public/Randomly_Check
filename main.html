@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机抽查</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h1 img {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function showThankYouMessage() {
+            setTimeout(() => {
+                alert('感谢安装！');
+                alert('系统可能会认为这是危险的软件，但是这是正常现象，请放心使用，本软件十分安全。');
+            }, 1000); // 延迟1秒以确保下载开始
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="随机抽查图标.ico" alt="图标">
+            随机抽查
+        </h1>
+    </header>
+    <a href="随机抽查_setup.exe" download onclick="showThankYouMessage()">
+        <button>下载</button>
+    </a>
+</body>
+
+</html>
